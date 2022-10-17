@@ -52,6 +52,7 @@ h2 {
     bottom: 0;
     width: 100%;
     margin-top: auto;
+    font-size: larger;
 }
 
 /***************Accueil**************/
@@ -224,7 +225,6 @@ ul {
     width: 90%;
     height: auto;
     border-radius: 20px;
-    border-block-color: ;
 }
 
 .blog {
