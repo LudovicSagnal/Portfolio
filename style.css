@@ -41,6 +41,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 .foot {
     display: flex;
     bottom: 0;
@@ -66,7 +70,7 @@ h2 {
 }
 
 hr {
-    width: 30%;
+    width: 40%;
     color: var(--colorInt);
     margin-top: 15px;
     margin-bottom: 15px;
@@ -177,12 +181,42 @@ ul {
         margin-right: 5%;
     }
 
+    #prof {
+        width: 50%;
+    }
+
     #log {
-        width: 65%;
+        width: 450px;
         height: 150px;
     }
 
 }
+
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .view_port {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+    @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+  
 
 
 /***************Galerie**************/
@@ -326,7 +360,7 @@ textarea {
 
 .but {
     margin: 20px auto;
-    width: 100px;
+    width: 140px;
 }
 
 .but:hover {
@@ -336,6 +370,25 @@ textarea {
 }
 
 @media (max-width: 700px) {
+    .form {
+        margin: 20px 1%;
+        padding: 5px;
+    }
+    input {
+        width: 90%;
+        height: 35px;
+    }
+    textarea {
+        width: 90%;
+        height: 250px;
+    }
+    .but {
+        width: 90%;
+        height: 40px;
+    }
+}
+
+@media (min-width:701px) and (max-width: 1200px) {
     .form {
         margin: 20px 2%;
         padding: 5px;
@@ -349,7 +402,7 @@ textarea {
         height: 250px;
     }
     .but {
-        width: 80%;
+        width: 40%;
         height: 40px;
     }
 }
