@@ -1,0 +1,355 @@
+* {
+    --color1:rgb(117, 124, 182) ;
+    --colorNF: rgb(26, 31, 80);
+    --colorInt: rgb(80, 89, 155);
+    --colorDiv: rgb(68, 114, 173);
+}
+
+
+:visited {
+    color: white;
+}
+
+body {
+    flex-direction: column;
+
+    margin: 0;
+    background-color: var(--color1);
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: auto;
+    background-color: var(--colorNF);
+    color: white;
+    font-size: larger;
+    min-height: 70px;
+    text-decoration:none;
+    box-shadow: 0 2px 5px black;
+}
+
+h1 {
+    text-align: center;
+    height: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorNF);
+    gap: 5%;
+    min-height: 70px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/***************Accueil**************/
+#prof {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+    border: solid var(--colorNF);
+    justify-self: center;
+}
+
+hr {
+    width: 30%;
+    color: var(--colorInt);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.prog {
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorDiv);
+    margin: 20px 20%;
+    border-radius: 20px;
+}
+
+#log {
+    width: 30%; 
+}
+
+.section1 {
+    background-color: var(--colorInt);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: "\26FD";
+}
+
+.liste {
+    width: 30%;
+    background-color: var(--colorDiv);
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0 2px 5px black;
+    font-size: larger;
+}
+
+.parcours {
+    width: 65%;
+    text-align: left;
+    font-size: larger;
+    background-color: var(--colorDiv);
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0 2px 5px black;
+}
+
+.XP {
+    background-color: var(--colorDiv);
+    border-radius: 20px;
+    margin: 1%;
+    width: 100%;
+    box-shadow: 0 2px 5px black;
+    font-size: larger;
+}
+
+@media (max-width: 700px) {
+
+    .prog {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #log {
+        width: 60%;
+    }
+
+    #prof {
+        width: 90%;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    ul {
+        padding-left: 20%;
+        text-align: left;
+    }
+    .liste {
+        width: 90%;
+        margin: auto;
+        margin-top: 8px;
+        text-align: center;
+        font-size: medium;
+    }
+    .parcours {
+        width: 90%;
+        margin: auto;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: medium;
+    }
+
+    .XP {
+        width: 90%;
+        margin: 10px auto;
+        font-size: medium;
+    }
+
+    .foot {
+        gap: 55px;
+    }
+}
+
+@media (min-width:701px) and (max-width: 1200px) {
+    .prog {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #log {
+        width: 65%;
+        height: 150px;
+    }
+
+}
+
+
+/***************Galerie**************/
+
+.sectionPort {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 50px 2%;
+    padding: 50px 3%;
+    border-radius: 20px;
+    background-color: var(--colorInt);
+}
+
+.rapaces {
+    text-align: center;
+    background-color: var(--colorDiv);
+    width: 30%;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px;
+}
+
+#rapace {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.google {
+    text-align: center;
+    background-color: var(--colorDiv);
+    width: 30%;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px;
+}
+
+#google {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border-block-color: ;
+}
+
+.blog {
+    text-align: center;
+    background-color: var(--colorDiv);
+    width: 30%;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px;
+}
+
+#carlin {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    .sectionPort {
+        flex-direction: column;
+    }
+
+    .rapaces {
+        width: 100%;
+    }
+
+    .google {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:701px) and (max-width: 1200px) {
+    .sectionPort {
+        flex-direction: column;
+    }
+
+    .rapaces {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .google {
+        width: 100%;
+        margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .foot {
+        gap: 160px;
+    }
+}
+
+
+
+
+/***************Contact**************/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorInt);
+    margin: 50px 15%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+label {
+    align-self: center;
+    margin: 10px auto;
+    text-decoration: underline;
+}
+
+input {
+    align-self: center;
+    width: 60%;
+    height: 25px;
+    border-radius: 10px;
+}
+
+textarea {
+    align-self: center;
+    width: 60%;
+    border-radius: 10px;
+    resize: none;
+}
+
+.but {
+    margin: 20px auto;
+    width: 100px;
+}
+
+.but:hover {
+    cursor: pointer;
+    background-color: aqua;
+    color: red;
+}
+
+@media (max-width: 700px) {
+    .form {
+        margin: 20px 2%;
+        padding: 5px;
+    }
+    input {
+        width: 80%;
+        height: 35px;
+    }
+    textarea {
+        width: 80%;
+        height: 250px;
+    }
+    .but {
+        width: 80%;
+        height: 40px;
+    }
+}
