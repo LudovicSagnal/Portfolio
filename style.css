@@ -352,6 +352,10 @@ ul {
         margin-top: 30px;
     }
 
+    #git {
+        height: 90px;
+    }
+
 }
 
 @media (min-width:701px) and (max-width: 1200px) {
@@ -384,6 +388,10 @@ ul {
 
     .foot {
         gap: 160px;
+    }
+
+    #git {
+        height: 90px;
     }
 }
 
