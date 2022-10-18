@@ -243,7 +243,7 @@ ul {
     height: 100%;
     width: 20%;
   
-    animation: 3s linear 0s infinite alternate move_eye;
+    animation: 3s linear 0s infinite alternate move_kit;
 }
 
 .kit:hover {
@@ -251,7 +251,7 @@ ul {
     transition: 1s;
 }
   
-@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@keyframes move_kit { from { margin-left:-20%; } to { margin-left:100%; }  }
   
 
 
@@ -310,6 +310,17 @@ ul {
     width: 90%;
     height: auto;
     border-radius: 20px;
+}
+
+.gitDiv {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+#git {
+    height: 60px;
 }
 
 .hrS {
